@@ -37,6 +37,7 @@ public class Main {
             amount++;
             System.out.println("Месяц " + amount + " сумма накоплений равна " + initialContribution);
         }
+        System.out.println(amount + " месяцев потребуется Василию, чтобы накопить сумму");
         System.out.println("Задача 5");
         int iC = 0;
         int d = 15000;
@@ -68,13 +69,13 @@ public class Main {
             friday += 7;
         }
         System.out.println("Задача 8");
-        int comet = 1896;
-        do {
-            System.out.println("Комета пролетает " + comet);
-            comet += 79;
+        int year = 2024;
+        int cometOld = year - 200;
+        int cometNew = year + 100;
+        for (int first = cometOld; first <= cometNew; first++) {
+            if (first % 79 == 0) {
+                System.out.println("Комета пролетает " + first);
+            }
         }
-        while (comet <= 2100);
     }
 }
-
-
